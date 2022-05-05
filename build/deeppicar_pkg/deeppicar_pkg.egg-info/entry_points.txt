@@ -1,0 +1,3 @@
+[console_scripts]
+deeppicar = deeppicar_pkg.deeppicar:main
+

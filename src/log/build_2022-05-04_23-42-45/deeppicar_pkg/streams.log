@@ -1,0 +1,37 @@
+[3.286s] Invoking command in '/root/deepracer_ws/DeepPicar-v3/src/deeppicar_pkg': PYTHONPATH=/root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/deeppicar_pkg build --build-base /root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/build install --prefix /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg --record /root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/install.log --single-version-externally-managed
+[4.360s] running egg_info
+[4.365s] creating ../build/deeppicar_pkg/deeppicar_pkg.egg-info
+[4.367s] writing ../build/deeppicar_pkg/deeppicar_pkg.egg-info/PKG-INFO
+[4.369s] writing dependency_links to ../build/deeppicar_pkg/deeppicar_pkg.egg-info/dependency_links.txt
+[4.370s] writing entry points to ../build/deeppicar_pkg/deeppicar_pkg.egg-info/entry_points.txt
+[4.371s] writing requirements to ../build/deeppicar_pkg/deeppicar_pkg.egg-info/requires.txt
+[4.373s] writing top-level names to ../build/deeppicar_pkg/deeppicar_pkg.egg-info/top_level.txt
+[4.378s] writing manifest file '../build/deeppicar_pkg/deeppicar_pkg.egg-info/SOURCES.txt'
+[4.520s] reading manifest file '../build/deeppicar_pkg/deeppicar_pkg.egg-info/SOURCES.txt'
+[4.523s] writing manifest file '../build/deeppicar_pkg/deeppicar_pkg.egg-info/SOURCES.txt'
+[4.524s] running build
+[4.524s] running build_py
+[4.524s] creating /root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/build
+[4.525s] creating /root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/build/lib
+[4.525s] creating /root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/build/lib/deeppicar_pkg
+[4.526s] copying deeppicar_pkg/__init__.py -> /root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/build/lib/deeppicar_pkg
+[4.526s] copying deeppicar_pkg/deeppicar.py -> /root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/build/lib/deeppicar_pkg
+[4.526s] running install
+[4.534s] running install_lib
+[4.535s] creating /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg
+[4.536s] copying /root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/build/lib/deeppicar_pkg/__init__.py -> /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg
+[4.536s] copying /root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/build/lib/deeppicar_pkg/deeppicar.py -> /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg
+[4.536s] byte-compiling /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg/__init__.py to __init__.cpython-38.pyc
+[4.541s] byte-compiling /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg/deeppicar.py to deeppicar.cpython-38.pyc
+[4.547s] running install_data
+[4.547s] creating /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/share/ament_index
+[4.547s] creating /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/share/ament_index/resource_index
+[4.548s] creating /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/share/ament_index/resource_index/packages
+[4.548s] copying resource/deeppicar_pkg -> /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/share/ament_index/resource_index/packages
+[4.548s] copying package.xml -> /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/share/deeppicar_pkg
+[4.549s] running install_egg_info
+[4.553s] Copying ../build/deeppicar_pkg/deeppicar_pkg.egg-info to /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg-0.0.0-py3.8.egg-info
+[4.558s] running install_scripts
+[4.620s] Installing deeppicar script to /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/deeppicar_pkg
+[4.621s] writing list of installed files to '/root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/install.log'
+[4.708s] Invoked command in '/root/deepracer_ws/DeepPicar-v3/src/deeppicar_pkg' returned '0': PYTHONPATH=/root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/deeppicar_pkg build --build-base /root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/build install --prefix /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg --record /root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/install.log --single-version-externally-managed

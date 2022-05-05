@@ -1,0 +1,84 @@
+[0.000000] (-) TimerEvent: {}
+[0.000492] (deeppicar_pkg) JobQueued: {'identifier': 'deeppicar_pkg', 'dependencies': OrderedDict()}
+[0.000655] (deeppicar_pkg) JobStarted: {'identifier': 'deeppicar_pkg'}
+[0.091449] (-) TimerEvent: {}
+[0.192452] (-) TimerEvent: {}
+[0.293106] (-) TimerEvent: {}
+[0.393816] (-) TimerEvent: {}
+[0.499728] (-) TimerEvent: {}
+[0.600401] (-) TimerEvent: {}
+[0.701059] (-) TimerEvent: {}
+[0.801725] (-) TimerEvent: {}
+[0.905475] (-) TimerEvent: {}
+[1.006128] (-) TimerEvent: {}
+[1.106807] (-) TimerEvent: {}
+[1.207739] (-) TimerEvent: {}
+[1.308372] (-) TimerEvent: {}
+[1.409002] (-) TimerEvent: {}
+[1.512088] (-) TimerEvent: {}
+[1.613413] (-) TimerEvent: {}
+[1.715815] (-) TimerEvent: {}
+[1.816496] (-) TimerEvent: {}
+[1.917137] (-) TimerEvent: {}
+[2.017773] (-) TimerEvent: {}
+[2.118415] (-) TimerEvent: {}
+[2.219096] (-) TimerEvent: {}
+[2.319829] (-) TimerEvent: {}
+[2.420473] (-) TimerEvent: {}
+[2.521124] (-) TimerEvent: {}
+[2.621765] (-) TimerEvent: {}
+[2.722417] (-) TimerEvent: {}
+[2.823266] (-) TimerEvent: {}
+[2.923953] (-) TimerEvent: {}
+[3.024630] (-) TimerEvent: {}
+[3.125310] (-) TimerEvent: {}
+[3.225948] (-) TimerEvent: {}
+[3.326572] (-) TimerEvent: {}
+[3.427232] (-) TimerEvent: {}
+[3.527897] (-) TimerEvent: {}
+[3.623963] (deeppicar_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/deeppicar_pkg', 'build', '--build-base', '/root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/build', 'install', '--prefix', '/root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg', '--record', '/root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/install.log', '--single-version-externally-managed'], 'cwd': '/root/deepracer_ws/DeepPicar-v3/src/deeppicar_pkg', 'env': {'SUDO_GID': '1000', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/root', 'USER': 'root', 'ROS_PACKAGE_PATH': '/root/deepracer_ws/aws-deepracer-launcher/install/async_web_server_cpp/share', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/root/deepracer_ws/aws-deepracer-launcher/install/rplidar_ros/lib:/root/deepracer_ws/aws-deepracer-launcher/install/deepracer_interfaces_pkg/lib:/root/deepracer_ws/aws-deepracer-launcher/install/async_web_server_cpp/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/root', 'OLDPWD': '/root/deepracer_ws/DeepPicar-v3', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/root/deepracer_ws/aws-deepracer-launcher/install:/root/deepracer_ws/DeepPicar-v3/src/install', 'SUDO_UID': '1000', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/root/deepracer_ws/aws-deepracer-launcher/install/async_web_server_cpp/lib/x86_64-linux-gnu/pkgconfig:/root/deepracer_ws/aws-deepracer-launcher/install/async_web_server_cpp/lib/pkgconfig', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SUDO_COMMAND': '/usr/bin/su', 'AMENT_PREFIX_PATH': '/root/deepracer_ws/aws-deepracer-launcher/install/deepracer_launcher:/root/deepracer_ws/aws-deepracer-launcher/install/webserver_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/web_video_server:/root/deepracer_ws/aws-deepracer-launcher/install/deepracer_systems_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/usb_monitor_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/status_led_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/ctrl_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/servo_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/sensor_fusion_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/rplidar_ros:/root/deepracer_ws/aws-deepracer-launcher/install/model_optimizer_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/inference_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/i2c_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/device_info_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/deepracer_navigation_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/camera_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/deepracer_interfaces_pkg:/root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg:/opt/ros/foxy', 'SHELL': '/bin/bash', 'SUDO_USER': 'deepracer', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg', 'LC_ALL': 'en_US.UTF-8', 'PYTHONPATH': '/root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/python3.8/site-packages:/root/deepracer_ws/aws-deepracer-launcher/install/webserver_pkg/lib/python3.8/site-packages:/root/deepracer_ws/aws-deepracer-launcher/install/deepracer_systems_pkg/lib/python3.8/site-packages:/root/deepracer_ws/aws-deepracer-launcher/install/usb_monitor_pkg/lib/python3.8/site-packages:/root/deepracer_ws/aws-deepracer-launcher/install/status_led_pkg/lib/python3.8/site-packages:/root/deepracer_ws/aws-deepracer-launcher/install/model_optimizer_pkg/lib/python3.8/site-packages:/root/deepracer_ws/aws-deepracer-launcher/install/device_info_pkg/lib/python3.8/site-packages:/root/deepracer_ws/aws-deepracer-launcher/install/deepracer_navigation_pkg/lib/python3.8/site-packages:/root/deepracer_ws/aws-deepracer-launcher/install/deepracer_interfaces_pkg/lib/python3.8/site-packages:/root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/deepracer_ws/aws-deepracer-launcher/install/deepracer_launcher:/root/deepracer_ws/aws-deepracer-launcher/install/web_video_server:/root/deepracer_ws/aws-deepracer-launcher/install/ctrl_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/servo_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/sensor_fusion_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/rplidar_ros:/root/deepracer_ws/aws-deepracer-launcher/install/inference_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/i2c_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/camera_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/deepracer_interfaces_pkg:/root/deepracer_ws/aws-deepracer-launcher/install/async_web_server_cpp'}, 'shell': False}
+[3.629226] (-) TimerEvent: {}
+[3.729892] (-) TimerEvent: {}
+[3.830684] (-) TimerEvent: {}
+[3.935939] (-) TimerEvent: {}
+[4.036642] (-) TimerEvent: {}
+[4.137568] (-) TimerEvent: {}
+[4.238458] (-) TimerEvent: {}
+[4.339094] (-) TimerEvent: {}
+[4.439728] (-) TimerEvent: {}
+[4.540372] (-) TimerEvent: {}
+[4.641015] (-) TimerEvent: {}
+[4.741644] (-) TimerEvent: {}
+[4.842273] (-) TimerEvent: {}
+[4.942908] (-) TimerEvent: {}
+[5.028019] (deeppicar_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[5.030221] (deeppicar_pkg) StdoutLine: {'line': b'writing ../build/deeppicar_pkg/deeppicar_pkg.egg-info/PKG-INFO\n'}
+[5.030989] (deeppicar_pkg) StdoutLine: {'line': b'writing dependency_links to ../build/deeppicar_pkg/deeppicar_pkg.egg-info/dependency_links.txt\n'}
+[5.031512] (deeppicar_pkg) StdoutLine: {'line': b'writing entry points to ../build/deeppicar_pkg/deeppicar_pkg.egg-info/entry_points.txt\n'}
+[5.040374] (deeppicar_pkg) StdoutLine: {'line': b'writing requirements to ../build/deeppicar_pkg/deeppicar_pkg.egg-info/requires.txt\n'}
+[5.041049] (deeppicar_pkg) StdoutLine: {'line': b'writing top-level names to ../build/deeppicar_pkg/deeppicar_pkg.egg-info/top_level.txt\n'}
+[5.043106] (-) TimerEvent: {}
+[5.144083] (-) TimerEvent: {}
+[5.244741] (-) TimerEvent: {}
+[5.271335] (deeppicar_pkg) StdoutLine: {'line': b"reading manifest file '../build/deeppicar_pkg/deeppicar_pkg.egg-info/SOURCES.txt'\n"}
+[5.280367] (deeppicar_pkg) StdoutLine: {'line': b"writing manifest file '../build/deeppicar_pkg/deeppicar_pkg.egg-info/SOURCES.txt'\n"}
+[5.281065] (deeppicar_pkg) StdoutLine: {'line': b'running build\n'}
+[5.281465] (deeppicar_pkg) StdoutLine: {'line': b'running build_py\n'}
+[5.281876] (deeppicar_pkg) StdoutLine: {'line': b'copying deeppicar_pkg/deeppicar.py -> /root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/build/lib/deeppicar_pkg\n'}
+[5.282443] (deeppicar_pkg) StdoutLine: {'line': b'running install\n'}
+[5.287188] (deeppicar_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[5.292569] (deeppicar_pkg) StdoutLine: {'line': b'copying /root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/build/lib/deeppicar_pkg/deeppicar.py -> /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg\n'}
+[5.294869] (deeppicar_pkg) StdoutLine: {'line': b'byte-compiling /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg/deeppicar.py to deeppicar.cpython-38.pyc\n'}
+[5.300933] (deeppicar_pkg) StdoutLine: {'line': b'running install_data\n'}
+[5.302780] (deeppicar_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.313743] (deeppicar_pkg) StdoutLine: {'line': b"removing '/root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[5.314782] (deeppicar_pkg) StdoutLine: {'line': b'Copying ../build/deeppicar_pkg/deeppicar_pkg.egg-info to /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg-0.0.0-py3.8.egg-info\n'}
+[5.317898] (deeppicar_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[5.345100] (-) TimerEvent: {}
+[5.400133] (deeppicar_pkg) StdoutLine: {'line': b'Installing deeppicar script to /root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/deeppicar_pkg\n'}
+[5.401388] (deeppicar_pkg) StdoutLine: {'line': b"writing list of installed files to '/root/deepracer_ws/DeepPicar-v3/src/build/deeppicar_pkg/install.log'\n"}
+[5.445276] (-) TimerEvent: {}
+[5.511918] (deeppicar_pkg) CommandEnded: {'returncode': 0}
+[5.548027] (-) TimerEvent: {}
+[5.586375] (deeppicar_pkg) JobEnded: {'identifier': 'deeppicar_pkg', 'rc': 0}
+[5.591466] (-) EventReactorShutdown: {}
