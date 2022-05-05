@@ -1,3 +1,7 @@
+# TODO
+Large modifications have happened to make DeepPicar run inside the AWS DeepRacer ROS2 system.
+I will update this README to reflect necessary steps to run DeepRacer with DeepPicar in a future commit.
+
 # DeepPicar
 
 DeepPicar is a low-cost autonomous RC car platform using a deep
