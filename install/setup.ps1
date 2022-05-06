@@ -23,7 +23,6 @@ function _colcon_prefix_chain_powershell_source_script {
 
 # source chained prefixes
 _colcon_prefix_chain_powershell_source_script "/opt/ros/foxy\local_setup.ps1"
-_colcon_prefix_chain_powershell_source_script "/root/deepracer_ws/DeepPicar-v3/src/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/root/deepracer_ws/aws-deepracer-launcher/install\local_setup.ps1"
 
 # source this prefix
