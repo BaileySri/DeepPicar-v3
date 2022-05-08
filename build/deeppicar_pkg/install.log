@@ -1,8 +1,10 @@
 /root/deepracer_ws/DeepPicar-v3/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg/__init__.py
 /root/deepracer_ws/DeepPicar-v3/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg/input_kbd.py
+/root/deepracer_ws/DeepPicar-v3/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg/params.py
 /root/deepracer_ws/DeepPicar-v3/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg/deeppicar.py
 /root/deepracer_ws/DeepPicar-v3/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg/__pycache__/__init__.cpython-38.pyc
 /root/deepracer_ws/DeepPicar-v3/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg/__pycache__/input_kbd.cpython-38.pyc
+/root/deepracer_ws/DeepPicar-v3/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg/__pycache__/params.cpython-38.pyc
 /root/deepracer_ws/DeepPicar-v3/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg/__pycache__/deeppicar.cpython-38.pyc
 /root/deepracer_ws/DeepPicar-v3/install/deeppicar_pkg/share/ament_index/resource_index/packages/deeppicar_pkg
 /root/deepracer_ws/DeepPicar-v3/install/deeppicar_pkg/share/deeppicar_pkg/package.xml
