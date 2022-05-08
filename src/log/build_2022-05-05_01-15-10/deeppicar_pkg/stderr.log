@@ -1,5 +1,0 @@
-  File "/root/deepracer_ws/DeepPicar-v3/src/install/deeppicar_pkg/lib/python3.8/site-packages/deeppicar_pkg/deeppicar.py", line 70
-    While True:
-          ^
-SyntaxError: invalid syntax
-
