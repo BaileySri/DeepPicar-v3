@@ -5,6 +5,7 @@
 img_width = 200
 img_height = 66
 img_channels = 3
+num_threads = 1
 
 ##########################################################
 # model selection

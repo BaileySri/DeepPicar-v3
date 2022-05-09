@@ -12,15 +12,21 @@ from rclpy.executors import MultiThreadedExecutor
 from rclpy.node import Node
 from deepracer_interfaces_pkg.msg import (ServoCtrlMsg, CameraMsg)
 
+# Loading Tensor Flow Model
 print ("Loading model: " + params.model_file)
 try:
     # Import TFLite interpreter from tflite_runtime package if it's available.
     from tflite_runtime.interpreter import Interpreter
-    interpreter = Interpreter(params.model_file+'.tflite', num_threads=2)
+    interpreter = Interpreter(params.model_file+'.tflite', num_threads=params.num_threads)
 except ImportError:
     # If not, fallback to use the TFLite interpreter from the full TF package.
     import tensorflow as tf
-    interpreter = tf.lite.Interpreter(model_path=params.model_file+'.tflite', num_threads=2)
+    interpreter = tf.lite.Interpreter(model_path=params.model_file+'.tflite', num_threads=params.num_threads)
+
+interpreter.allocate_tensors()
+input_index = interpreter.get_input_details()[0]["index"]
+output_index = interpreter.get_output_details()[0]["index"]
+# End Tensor Flow Model
 
 class DeepPicarNode(Node):
     #Constants
@@ -34,6 +40,7 @@ class DeepPicarNode(Node):
     #Local Variables
     throttle = 3
     use_dnn = False
+    dnn_count = 0
     angle = 3
     keyfile = None
     vidfile = None
@@ -55,7 +62,7 @@ class DeepPicarNode(Node):
                                                                      self.camera_funcs,
                                                                      1)
         
-        timer_period = 0.1 #seconds
+        timer_period = 0.5 #seconds
         self.timer = self.create_timer(timer_period, self.control)
 
     def turn_off(self):
@@ -122,7 +129,10 @@ class DeepPicarNode(Node):
                 self.enable_record = not self.enable_record
             elif ch == ord('d'):
                 change = False
-                print ("\ntoggle DNN mode")
+                if self.use_dnn:
+                    print("\ndisable DNN mode")
+                else:
+                    print("\nenable DNN mode")
                 self.use_dnn = not self.use_dnn
             else:
                 change = False
@@ -134,24 +144,26 @@ class DeepPicarNode(Node):
             self.deeppicar_drive_publisher.publish(servo)
     
     def dnn(self, frame):
+        servo = ServoCtrlMsg()
         img = self.preprocess(frame)
         img = np.expand_dims(img, axis=0).astype(np.float32)
         interpreter.set_tensor(input_index, img)
         interpreter.invoke()
         angle = interpreter.get_tensor(output_index)[0][0]
         degree = self.rad2deg(angle)
+        self.dnn_count += 1
         if degree <= -15:
             servo.angle = self.CATEGORY_VALUES[1]
             self.angle = 1
-            print ("left (CPU)")
+            print (str(self.dnn_count) + ": left (CPU)")
         elif degree < 15 and degree > -15:
             servo.angle = self.CATEGORY_VALUES[2]
             self.angle = 2
-            print ("center (CPU)")
+            print (str(self.dnn_count) + ": center (CPU)")
         elif degree >= 15:
             servo.angle = self.CATEGORY_VALUES[3]
             self.angle = 3
-            print ("right (CPU)")
+            print (str(self.dnn_count) + ": right (CPU)")
         servo.throttle = self.CATEGORY_VALUES[3]
         self.deeppicar_drive_publisher.publish(servo)
 
@@ -187,8 +199,7 @@ class DeepPicarNode(Node):
 def main(args=None):
     rclpy.init(args=args)
     deeppicar_node = DeepPicarNode()
-    executor = MultiThreadedExecutor()
-    rclpy.spin(deeppicar_node, executor)
+    rclpy.spin(deeppicar_node)
 
     deeppicar_node.turn_off()
     deeppicar_node.destroy_node()
